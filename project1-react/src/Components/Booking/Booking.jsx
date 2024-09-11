@@ -26,7 +26,7 @@ const Booking = () => {
     const [bookings, dispatch] = useReducer(bookingListReducer, []);
     const [buyers, setBuyers] = useState([]);
     const bookingAddHandler = (buyerId, bookingDate) => {
-        if (bookings.filter(booking => booking.property.id === property.id && new Date(booking.time) === new Date(bookingDate)).length) {
+        if (bookings.filter(booking => booking.propertyId === property.id && new Date(booking.time) === new Date(bookingDate)).length) {
             alert(`${bookingDate} is not available`);
             return;
         }
@@ -152,14 +152,14 @@ const Booking = () => {
             }
             <ul>
                 {
-                    bookings.filter(booking => booking.property.id === property.id).length === 0 && !loadingBookings ?
+                    bookings.filter(booking => booking.propertyId === property.id).length === 0 && !loadingBookings ?
                         <li>
                             <div className="message alert alert-info" role="alert">
                                 <i className="bi bi-info-circle"></i>&nbsp;This are no bookings for this property
                             </div>
                         </li>
                         :
-                        bookings.filter(booking => booking.property.id === property.id)
+                        bookings.filter(booking => booking.propertyid === property.id)
                         .map(booking => (
                             <li key={booking.id}>
                                 <div className="bookingBlock">
