@@ -119,7 +119,7 @@ const Booking = () => {
         })
         .then(buyers => {
             setBuyers(buyers);
-            console.log(JSON.stringify(buyers, null, 2));
+            // console.log(JSON.stringify(buyers, null, 2));
         })
         .catch(error => console.error(error));
     }, []);

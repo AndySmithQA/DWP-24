@@ -65,7 +65,7 @@ const Property = (props) => {
             dispatch({type: "SET", payload: properties});
             setSearchResult(properties);
             setLoading(false);
-            console.log(JSON.stringify(properties, null, 2));
+            // console.log(JSON.stringify(properties, null, 2));
         })
         .catch(error => {
             setLoading(false);

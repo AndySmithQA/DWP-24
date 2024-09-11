@@ -9,8 +9,8 @@ import "../Property/Property.css";
 const SellerProperty = () => {
     const seller = useLocation().state;
 
-    console.log("======");
-console.log(useLocation());
+//     console.log("======");
+// console.log(useLocation());
 
     const [soldProperty, setSoldProperty] = useState({});
     const [loadingProperties, setLoadingProperties] = useState(false);

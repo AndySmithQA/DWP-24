@@ -57,7 +57,7 @@ const Seller = (props) => {
             dispatch({type: "SET", payload: sellers});
             setLoading(false);
 
-            console.log(JSON.stringify(sellers, null, 2));
+            // console.log(JSON.stringify(sellers, null, 2));
         }).catch(error => {
             setLoading(false);
             console.error(error);

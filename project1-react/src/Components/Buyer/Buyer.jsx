@@ -56,7 +56,7 @@ const Buyer = (props) => {
             .then(buyers => {
                 dispatch({type: "SET", payload: buyers});
                 setLoading(false);
-                console.log(JSON.stringify(buyers, null, 2));
+                // console.log(JSON.stringify(buyers, null, 2));
             })
             .catch(error => console.error(error));
     }, []);

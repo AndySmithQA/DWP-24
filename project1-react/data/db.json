@@ -67,6 +67,14 @@
       "postcode": "QA1 1QA",
       "phone": "123344556",
       "id": "13"
+    },
+    {
+      "id": "14",
+      "firstName": "Andrew",
+      "surname": "Smith",
+      "address": "107 Fairway",
+      "postcode": "NR85HE",
+      "phone": "07766024148"
     }
   ],
   "property": [
@@ -81,7 +89,7 @@
       "garden": 0,
       "sellerId": 1,
       "status": "SOLD",
-      "buyerId": 3
+      "buyerId": "1"
     },
     {
       "id": "2",
@@ -119,6 +127,18 @@
       "sellerId": 4,
       "status": "SOLD",
       "id": "4"
+    },
+    {
+      "id": "5",
+      "address": "66 there",
+      "postcode": "nr7 67h",
+      "type": "SEMI",
+      "price": 23456,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "garden": "true",
+      "sellerId": 14,
+      "status": "FORSALE"
     }
   ],
   "buyer": [

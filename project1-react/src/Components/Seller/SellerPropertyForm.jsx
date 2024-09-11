@@ -34,7 +34,7 @@ const SellerPropertyForm = (props) => {
                 "bedrooms": Number(bedroomsRef.current.value),
                 "bathrooms": Number(bathroomsRef.current.value),
                 "garden": gardenRef.current.value,
-                "seller": {"id": sellerId},
+                "sellerId": sellerId,
                 "status": "FORSALE"
             };
             addHandler(newProperty);
