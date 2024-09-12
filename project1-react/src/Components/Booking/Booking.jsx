@@ -35,6 +35,8 @@ const Booking = () => {
 
         let newBooking = {
             "buyerId":  buyerId,
+            "buyerFirstName": buyers.find(buyer => buyer.id === buyerId).firstName,
+            "buyerSurname": buyers.find(buyer => buyer.id === buyerId).surname,
             "propertyId": property.id,
             "time": bookingDate
         };
@@ -49,7 +51,7 @@ const Booking = () => {
                     alert("An error has occurred.  Unable to create the TODO item");
                     throw response.status;
                 } else return response.json();
-                console.log(newBooking);
+                
             }
         ).then(newBookingWithId => {
             dispatch({type: "ADD", payload: newBookingWithId});
@@ -167,7 +169,8 @@ const Booking = () => {
                                     <i className="bi bi-alarm-fill text-primary"/>
                                     {new Date(booking.time).toLocaleString()}
                                 </div>
-                                {booking.buyerId.firstName}&nbsp;{booking.buyerId.surname}
+                                <b>{booking.buyerFirstName}&nbsp;{booking.buyerSurname}</b>
+                                
 
                                 <button className="btn btn-sm btn-danger float-end"
                                         onClick={bookingRemoveHandler.bind(this, booking.id)}>
