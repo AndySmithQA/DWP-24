@@ -67,14 +67,6 @@
       "postcode": "QA1 1QA",
       "phone": "123344556",
       "id": "13"
-    },
-    {
-      "id": "ffdb",
-      "firstName": "Andrew",
-      "surname": "Smith",
-      "address": "107 Fairway",
-      "postcode": "NR85HE",
-      "phone": "07766024148"
     }
   ],
   "property": [
@@ -127,19 +119,6 @@
       "sellerId": 4,
       "status": "SOLD",
       "id": "4"
-    },
-    {
-      "id": "13cf",
-      "address": "107 Fairway",
-      "postcode": "NR85HE",
-      "type": "DETACHED",
-      "price": 234567,
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "garden": "true",
-      "sellerId": "ffdb",
-      "status": "SOLD",
-      "buyerId": "1"
     }
   ],
   "buyer": [
