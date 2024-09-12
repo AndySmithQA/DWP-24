@@ -139,6 +139,18 @@
       "garden": "true",
       "sellerId": 14,
       "status": "FORSALE"
+    },
+    {
+      "id": "2235",
+      "address": "22 away",
+      "postcode": "nr4 5gr",
+      "type": "SEMI",
+      "price": 234567,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "garden": "true",
+      "sellerId": "1",
+      "status": "FORSALE"
     }
   ],
   "buyer": [
@@ -178,6 +190,18 @@
       "propertyId": 1,
       "time": "2023-03-02T08:00:00.000Z",
       "id": "3"
+    },
+    {
+      "id": "d123",
+      "buyerId": "3",
+      "propertyId": "5",
+      "time": "2024-09-12T11:00:00.000Z"
+    },
+    {
+      "id": "c7d5",
+      "buyerId": "1",
+      "propertyId": "2235",
+      "time": "2024-09-12T07:00:00.000Z"
     }
   ]
 }
